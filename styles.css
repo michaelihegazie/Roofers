@@ -118,6 +118,12 @@ a {
   background-color: #F6F6F6;
   padding: 12px;
 }
+.service_bg:hover {
+  /* box-shadow: 0 0 20px #F8A325, 0 0 40px #F8A325; */
+  border-color: #F8A325;
+  border: 2px solid #F8A325;
+  cursor: pointer;
+}
 
 /* bootstrap button style  */
 
