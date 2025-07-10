@@ -7,7 +7,6 @@ Description: Roofers  is a Free Bootstrap Website Template for Roofing by Templa
 Version: 1.0 
 */
 
-
 /*--------------------------------------------------------------
 This is main CSS file that contains custom style rules used in this template
 --------------------------------------------------------------*/
@@ -40,29 +39,28 @@ html {
 }
 
 body {
-  --heading-font: 'Roboto Condensed', sans-serif;
+  --heading-font: "Roboto Condensed", sans-serif;
   --heading-font-weight: 700;
   --heading-color: #313131;
   --heading-line-height: 1.24;
 
-  --accent-color: #D06051;
-  --linear-gradient: linear-gradient(90deg, #C62813 0%, #D06051 100%);
-
+  --accent-color: #d06051;
+  --linear-gradient: linear-gradient(90deg, #c62813 0%, #d06051 100%);
 
   /* bootstrap */
-  --bs-body-font-family: 'Roboto', sans-serif;
+  --bs-body-font-family: "Roboto", sans-serif;
   --bs-body-font-size: 18px;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.6875rem;
   --bs-body-color: #777777;
   --bs-body-color-rgb: 143, 143, 143;
 
-  --bs-primary: #8C907E;
+  --bs-primary: #8c907e;
   --bs-secondary: #6c757d;
   --bs-black: #313131;
-  --bs-light: #FFFFFF;
+  --bs-light: #ffffff;
   --bs-dark: #212529;
-  --bs-gray: #D9D9D9;
+  --bs-gray: #d9d9d9;
   --bs-gray-dark: #51565b;
 
   --bs-primary-rgb: 140, 144, 126;
@@ -76,7 +74,6 @@ body {
   --bs-link-decoration: underline;
   --bs-link-hover-color: #111;
   --bs-link-hover-color-rgb: 17, 17, 17;
-
 }
 
 h1,
@@ -115,13 +112,13 @@ a {
 
 .service_bg {
   border-radius: 15px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 12px;
 }
 .service_bg:hover {
   /* box-shadow: 0 0 20px #F8A325, 0 0 40px #F8A325; */
-  border-color: #F8A325;
-  border: 2px solid #F8A325;
+  border-color: #f8a325;
+  border: 2px solid #f8a325;
   cursor: pointer;
 }
 
@@ -155,7 +152,12 @@ a {
 }
 
 .btn-primary {
-  background-image: linear-gradient(to right, #C62813 0%, #D06051 51%, #C62813 100%);
+  background-image: linear-gradient(
+    to right,
+    #c62813 0%,
+    #d06051 51%,
+    #c62813 100%
+  );
   background-size: 200% auto;
   border: none;
   transition: 0.7s all;
@@ -165,7 +167,6 @@ a {
 .btn-primary:hover {
   background-position: right center;
 }
-
 
 /*---- navigation section style start ----*/
 
@@ -192,7 +193,6 @@ a {
 nav.navbar {
   z-index: 999999;
 }
-
 
 /* dropdown style  */
 
@@ -228,8 +228,6 @@ nav.navbar {
   background-color: var(--accent-color) !important;
 }
 
-
-
 /*---- hero section style start ----*/
 
 .pattern-overlay.pattern-right {
@@ -238,7 +236,7 @@ nav.navbar {
 }
 
 form.hero-form {
-  background: rgba(255, 255, 255, 0.90);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .form-label {
@@ -265,12 +263,10 @@ img.logo-image:hover {
   opacity: 1;
 }
 
-
-
 /*---- testimonial section style start ----*/
 
 section#testimonial {
-  background: linear-gradient(90deg, #C62813 0%, #D06051 100%);
+  background: linear-gradient(90deg, #c62813 0%, #d06051 100%);
 }
 
 .testimonial-pattern-overlay.pattern-right {
@@ -284,11 +280,11 @@ section#testimonial {
 }
 
 .testimonial-content {
-  background: #F9E9E9;
+  background: #f9e9e9;
 }
 
 iconify-icon.rate {
-  color: #F2B821;
+  color: #f2b821;
 }
 
 /* swiper overide 
@@ -297,7 +293,6 @@ iconify-icon.rate {
 .swiper-pagination-bullet {
   background: var(--swiper-pagination-bullet-inactive-color, var(--bs-light));
 }
-
 
 /*---- services section style start ----*/
 
@@ -318,7 +313,6 @@ iconify-icon.services-icon {
 
 .service-btn {
   transition: all 0.5s ease-in;
-
 }
 
 /* .services-components:hover {
@@ -337,7 +331,6 @@ iconify-icon.services-icon {
   transition: all 0.5s ease-in;
 } */
 
-
 /*---- projects section style start ----*/
 
 section#projects {
@@ -346,7 +339,7 @@ section#projects {
 
 button.filter-button {
   font-family: var(--heading-font);
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   background: transparent;
   color: var(--bs-light);
   text-transform: uppercase;
@@ -364,7 +357,6 @@ button.filter-button:hover {
   background: var(--bs-light);
 }
 
-
 .item .description {
   width: 90%;
   height: 90%;
@@ -373,7 +365,7 @@ button.filter-button:hover {
   left: 15px;
   z-index: 5;
   opacity: 0;
-  background: rgba(255, 255, 255, 0.90);
+  background: rgba(255, 255, 255, 0.9);
   transition: all 0.5s ease-in;
 }
 
@@ -381,7 +373,7 @@ button.filter-button:hover {
   opacity: 1;
 }
 
-@media only screen and (min-width:770px) and (max-width: 1400px) {
+@media only screen and (min-width: 770px) and (max-width: 1400px) {
   .item .description {
     text-align: start;
   }
@@ -392,14 +384,12 @@ button.filter-button:hover {
   }
 }
 
-@media only screen and (min-width:770px) and (max-width: 1200px) {
+@media only screen and (min-width: 770px) and (max-width: 1200px) {
   .item .description {
     left: -5px;
     background: none;
   }
 }
-
-
 
 /*---- process section style start ----*/
 
@@ -418,17 +408,17 @@ iconify-icon.process-icon {
   font-size: 110px;
 }
 
-
-
 /*---- faq section style start ----*/
 
 /* accordian style override  */
 
 .accordion {
   --bs-accordion-border-color: var(--accent-color);
-  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
-  --bs-accordion-btn-icon: url('https://api.iconify.design/ion/caret-down.svg?color=%23d06051&width=30');
-  --bs-accordion-btn-active-icon: url('https://api.iconify.design/ion/caret-down.svg?color=%23d06051&width=30');
+  --bs-accordion-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    border-radius 0.15s ease;
+  --bs-accordion-btn-icon: url("https://api.iconify.design/ion/caret-down.svg?color=%23d06051&width=30");
+  --bs-accordion-btn-active-icon: url("https://api.iconify.design/ion/caret-down.svg?color=%23d06051&width=30");
   --bs-accordion-border-radius: 0px;
 }
 
@@ -456,7 +446,6 @@ iconify-icon.process-icon {
   box-shadow: none;
 }
 
-
 /*---- cta section style start ----*/
 
 section#cta {
@@ -481,7 +470,6 @@ section#cta {
   }
 }
 
-
 /*---- footer section style start ----*/
 
 iconify-icon.contact-icon {
@@ -490,46 +478,41 @@ iconify-icon.contact-icon {
 }
 
 iconify-icon.social-link-icon {
-  color: rgba(208, 96, 81, 0.60);
+  color: rgba(208, 96, 81, 0.6);
   font-size: 24px;
 }
 
 iconify-icon.social-link-icon.active,
 iconify-icon.social-link-icon:hover {
-  color: #D06051;
+  color: #d06051;
 }
-
 
 /*--------------------------------------------------------------
 About page style
 --------------------------------------------------------------*/
 
-.breadcrumb-item+.breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item::before {
   color: var(--bs-light);
 }
-
 
 /*--------------------------------------------------------------
   Blog page style
   --------------------------------------------------------------*/
 
-.active>.page-link,
+.active > .page-link,
 .page-link.active {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
-
 
 .form-control:focus {
   border-color: var(--bs-black);
   box-shadow: none;
 }
 
-
 /*--------------------------------------------------------------
   Price page style
   --------------------------------------------------------------*/
-
 
 .plan-post {
   border: 1px solid var(--accent-color);
@@ -544,7 +527,7 @@ span.price-tick {
 }
 
 .recommend-price {
-  background: #D06051;
+  background: #d06051;
 }
 
 /*--------------------------------------------------------------
@@ -571,14 +554,12 @@ button.filter-button.gallery-btn:hover {
   background: var(--accent-color);
 }
 
-
-
 /*--------------------------------------------------------------
 reviews section style start
 --------------------------------------------------------------*/
 
 .reviews-components {
-  border: 2px solid #FAFAFA;
+  border: 2px solid #fafafa;
   box-shadow: 0px 12px 90px rgba(12, 12, 12, 0.06);
   border-radius: 9px;
 }
@@ -590,4 +571,113 @@ iconify-icon.quote {
 
 .rate {
   color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+  Custom styles
+  --------------------------------------------------------------*/
+
+/* Make sure the container uses full width */
+.testimonial-swiper {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Swiper Slide: Remove fixed widths */
+.swiper-slide {
+
+}
+
+/* Each testimonial box */
+.testimonial-content {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Star icon styling */
+.rate {
+  color: #fbc02d; /* gold/yellow */
+  font-size: 1.2rem;
+}
+
+/* Navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+  top: 40%;
+  width: 30px;
+  height: 30px;
+}
+
+/* Optional: Smaller screen tweaks */
+@media (max-width: 767px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+/* Pagination Dots */
+.swiper-pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #000;
+  opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000;
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+.map-container {
+  width: 100%;
+  height: 500px; /* Fixed height */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive adjustments for smaller screens */
+.isotope-container {
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+/* Optional: limit image height for consistent grid */
+.isotope-container img {
+  max-height: 150px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+}
+.description {
+  overflow-wrap: break-word; /* wrap long words */
+  word-break: break-word;
+}
+
+.project-date {
+  font-size: 0.85rem; /* smaller date font */
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-heading {
+  font-size: 1rem; /* smaller heading font */
+  line-height: 1.2;
+  white-space: normal; /* allow wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
